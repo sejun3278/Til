@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset ="utf-8" />
+        <title> Server </title>
+    </head>
+
+    <body>
+        <h1> 성공적으로 불러왔네요? </h1>
+        <h2> 씬난다 증말 </h2>
+
+        <input type="text" id="input_value"/>
+        <button id = "input_button" onclick="test()"> Send </button>
+
+        <script>
+            function test() {
+                let str = document.getElementById('input_value')
+                let cover_str = str.value
+                str.value = '';
+
+                if(cover_str.length > 0) {
+                    console.log(cover_str)
+                }
+            };
+        </script>
+    </body>
+</html>
